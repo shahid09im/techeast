@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techeast Networks Pvt. Ltd. | Telecom, Logistics & Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS DESIGN (Internal) --- */
+        :root {
+            --primary: #0a4da2;
+            --secondary: #00c6ff;
+            --dark: #1a1a2e;
+            --light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; scroll-behavior: smooth; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+        .navbar { background: var(--white); padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-logo { height: 50px; border-radius: 5px; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            padding: 100px 0; 
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero h1 span { color: var(--secondary); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+
+        /* Sections */
+        section { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary); }
+
+        /* Service Cards */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--white); padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3.5rem; color: var(--primary); margin-bottom: 20px; }
+
+        /* Contact & Info */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .info-box { background: #eef5ff; padding: 30px; border-radius: 12px; border-left: 5px solid var(--primary); }
+        .info-box h3 { margin-bottom: 15px; color: var(--primary); }
+        
+        footer { background: var(--dark); color: var(--white); padding: 30px 0; text-align: center; margin-top: 50px; }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo-brand">
+                <img src="techpanklogo.png" alt="Techeast Logo" class="nav-logo">
+                <span>TECHEAST NETWORKS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Innovative <span>Telecom</span> & <span>Logistics</span></h1>
+            <p>Providing high-quality infrastructure deployment and technology solutions across India.</p>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+                <a href="#services" style="background: var(--secondary); color: var(--dark); padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Our Services</a>
+                <a href="tel:6200643763" style="border: 2px solid white; color: white; padding: 10px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="service-grid">
+            <div class="card">
+                <i class="fas fa-tower-broadcast"></i>
+                <h3>Telecom Deployment</h3>
+                <p>Comprehensive infrastructure setup, tower installation, and network maintenance services.</p>
+                <a href="telecomdevelopment.html">Click for Detail</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-truck-fast"></i>
+                <h3>Logistics</h3>
+                <p>Efficient supply chain management and regional distribution solutions tailored for Patna.</p>
+                <a href="logistic.html">Click for Detail</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-microchip"></i>
+                <h3>Technology Solutions</h3>
+                <p>Innovative hardware integration and digital systems to modernize your business operations.</p>
+                <a href="technology.html">Click for Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background: var(--white);">
+        <div class="container">
+            <h2 class="section-title">About Techeast Networks</h2>
+            <div class="contact-grid">
+                <div>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Techeast Networks Pvt. Ltd. is a dedicated service provider based in Patna, Bihar. We focus on delivering high-impact results in telecom infrastructure and modern logistics.</p>
+                    <div class="info-box">
+                        <h3>Company Credentials</h3>
+                        <p><strong>GST:</strong> 10AAMCT7880J1ZX</p>
+                        <p><strong>CIN:</strong> U61101BR2026PTC082338</p>
+                        <p><strong>Registered Address:</strong> Saristabad, Gardanibagh, Phulwari, Patna-800001, Bihar</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Our Leadership</h3>
+                    <p><strong>Pankaj Kumar</strong><br>Managing Partner<br>Phone: 6200643763</p>
+                    <hr style="margin: 15px 0; opacity: 0.2;">
+                    <p><strong>Razia Perween</strong><br>Managing Partner<br>Phone: 9576124467</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+            <div class="info-box">
+                <h3>Office Location</h3>
+                <p>C/O - Alok Kumar</p>
+                <p>Road No.-10, Near- St Loreto school Sadhanapuri, Gardanibagh</p>
+                <p>Patna-800002</p>
+                <p style="margin-top: 15px;"><i class="fas fa-envelope"></i> pankaj@techeastnetwork.in</p>
+            </div>
+            <div class="card" style="text-align: left;">
+                <form>
+                    <label>Your Name</label>
+                    <input type="text" style="width: 100%; padding: 10px; margin: 10px 0 20px; border: 1px solid #ddd; border-radius: 5px;">
+                    <label>Your Email</label>
+                    <input type="email" style="width: 100%; padding: 10px; margin: 10px 0 20px; border: 1px solid #ddd; border-radius: 5px;">
+                    <button type="submit" style="background: var(--primary); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Techeast Networks Pvt. Ltd. | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

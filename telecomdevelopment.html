@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom Deployment | Techeast Networks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a4da2;
+            --secondary: #00c6ff;
+            --dark: #1a1a2e;
+            --light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navbar */
+        .navbar { background: var(--white); padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-logo { height: 45px; }
+
+        /* Banner */
+        .page-banner { 
+            padding: 80px 0; 
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%); 
+            color: var(--white); 
+            text-align: center; 
+        }
+        .page-banner h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+        /* Content Section */
+        .content-section { padding: 60px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .service-list { list-style: none; margin-top: 20px; }
+        .service-list li { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
+        .service-list i { color: var(--secondary); font-size: 1.3rem; }
+
+        /* Specs Box */
+        .specs-box { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .specs-box h3 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid var(--secondary); display: inline-block; }
+
+        footer { background: var(--dark); color: var(--white); padding: 30px 0; text-align: center; margin-top: 50px; }
+        
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo-brand">
+                <img src="techpanklogo.png" alt="Logo" class="nav-logo"> TECHEAST NETWORKS
+            </a>
+            <a href="index.html" style="text-decoration: none; color: var(--primary); font-weight: 600;">← Back to Home</a>
+            
+        </div>
+    </nav>
+
+    <header class="page-banner">
+        <div class="container">
+            <h1>Telecom Deployment Services</h1>
+            <p>Building the backbone of connectivity in Patna and across Bihar.</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">Infrastructure & Network Setup</h2>
+                    <p>At <strong>Techeast Networks Pvt. Ltd.</strong>, we provide end-to-end solutions for telecommunications infrastructure. Our expert team handles everything from tower foundation to network optimization.</p>
+                    
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Site Acquisition & Legal Clearances</li>
+                        <li><i class="fas fa-check-circle"></i> Tower Foundation & Structural Erection</li>
+                        <li><i class="fas fa-check-circle"></i> Fiber Optic Cable (OFC) Laying & Splicing</li>
+                        <li><i class="fas fa-check-circle"></i> 5G & 4G Equipment Installation</li>
+                        <li><i class="fas fa-check-circle"></i> Testing & Commissioning</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-box">
+                    <h3>Project Details</h3>
+                    <p><strong>Lead Partner:</strong> Pankaj Kumar & Razia Perween </p>
+                    <p><strong>Technical Support:</strong> Shahid Raza</p>
+                    <p><strong>Primary Area:</strong> bihar & Surrounding Regions</p>
+                    <hr style="margin: 15px 0; opacity: 0.2;">
+                    <p><strong>GST:</strong> 10AAMCT7880J1ZX</p>
+                    <p><strong>CIN:</strong> U61101BR2026PTC082338</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Techeast Networks Pvt. Ltd. | C/O - Alok Kumar, Patna-800002</p>
+        </div>
+    </footer>
+
+</body>
+</html>
